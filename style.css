@@ -1,0 +1,40 @@
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-blue: #88bbbc;
+  --color-light-blue: #d8eaea;
+  /* work part's highlights */
+  --color-pale-blue: #dceaeb;
+  --color-grey: #cecece;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+h1,
+h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
+}
