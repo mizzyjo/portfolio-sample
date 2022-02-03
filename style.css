@@ -105,6 +105,7 @@ p {
   background-color: var(--color-light-grey);
   color: transparent;
   height: 1px;
+  margin: 30px 0;
 }
 
 .talk__container {
@@ -117,13 +118,37 @@ p {
 
 .talk__btn {
   line-height: 70px;
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.talk__btn:hover {
+  background-color: var(--color-pale-blue);
+  font-weight: var(--weight-bold);
+  transform: scale(1.1);
+  border: solid 2px var(--color-grey);
 }
 
 .talk__btn i {
   color: var(--color-grey);
   margin-right: 15px;
+}
+
+.subtitle {
+  color: var(--color-blue);
+  font-size: var(--font-micro);
+}
+
+#study button {
+  background-color: var(--color-white);
+  border: solid 1px var(--color-grey);
+  font-size: var(--font-micro);
+}
+
+.work__detail {
+  padding: 15px 50px;
 }
 
 /* Navbar */
@@ -132,7 +157,7 @@ p {
   position: fixed;
   width: 100%;
   display: flex;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar__logo {
@@ -179,7 +204,6 @@ p {
 #home {
   padding: 40px;
   padding-top: 110px;
-  margin-bottom: 30px;
   display: flex;
 }
 
@@ -208,6 +232,7 @@ p {
   width: 100%;
   z-index: -1;
 }
+
 .home__right .contact__links {
   display: flex;
   flex-direction: column;
@@ -242,14 +267,16 @@ p {
 .home__explore .division__line {
   width: 100px;
   margin-left: 20px;
+  cursor: auto;
 }
 
 .home__explore-contents {
-  background-color: aqua;
+  background-color: var(--color-light-blue);
   margin: 20px;
   position: absolute;
-  max-width: 1100px;
-  display: none;
+  max-width: 580px;
+  width: 40%;
+  /* display: none; */
 }
 
 .home__center {
@@ -265,7 +292,76 @@ p {
 
 .home__center .talk__container {
   position: absolute;
-  top: 500px;
-  left: 350px;
+  top: 530px;
+  left: 380px;
   cursor: pointer;
+}
+
+.line__container .division__line {
+  margin-bottom: 30px;
+}
+
+/* Study */
+#study {
+  padding: 40px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#study .section__container {
+  position: relative;
+}
+
+#study .section__container .title {
+  margin: 20px 0 50px 0;
+}
+
+#study button {
+  transition: all var(--animation-duration) ease-in;
+}
+
+#study button:hover {
+  background-color: var(--color-pale-blue);
+  font-weight: var(--weight-bold);
+}
+
+.btn__container {
+  position: relative;
+}
+
+.study__all-btn {
+  position: absolute;
+  top: -100px;
+  left: 1000px;
+  padding: 14px 28px;
+}
+
+.work {
+  display: flex;
+}
+
+.work:nth-child(odd) .work__right {
+  margin-left: 30px;
+}
+
+.work:nth-child(even) .work__left {
+  margin-right: 30px;
+}
+
+.work:nth-child(even) {
+  margin: 200px 0;
+}
+
+.work img {
+  background-color: yellow;
+  width: 500px;
+}
+
+.work__num {
+  color: var(--color-grey);
+  margin: 10px 0;
+}
+
+.work__description {
+  margin: 30px 0;
 }
