@@ -365,3 +365,89 @@ p {
 .work__description {
   margin: 30px 0;
 }
+
+/* Clients */
+#clients {
+  padding: 20px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+#clients .section__container {
+  background-color: var(--color-blue);
+  margin: auto;
+  padding: 100px 80px 50px 80px;
+}
+
+#clients .subtitle {
+  color: var(--color-white);
+  font-size: var(--font-micro);
+}
+
+#clients .title {
+  margin: 20px 0;
+}
+
+.clients__list {
+  font-family: "Yellowtail", cursive;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.client {
+  /* border: solid 1px yellow; */
+  width: 250px;
+  height: 250px;
+  line-height: 170px;
+  position: relative;
+}
+
+.client i {
+  font-size: 80px;
+  margin-top: 40px;
+}
+
+.client:hover .client__description {
+  /* background-color: var(--color-black); */
+  /* display: inline-block; */
+  opacity: 0.8;
+}
+
+.client__name {
+  color: var(--color-white);
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  font-size: var(--font-regular);
+}
+
+.client__description {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-grey);
+  color: var(--color-black);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  line-height: 0;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.client__description p {
+  /* height: 20%; */
+}
+
+.client__description .division__line {
+  width: 80px;
+  margin: 20px auto;
+  /* width: ; */
+  /* text-align: center; */
+}
