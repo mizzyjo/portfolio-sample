@@ -127,7 +127,7 @@ p {
 .talk__btn:hover {
   background-color: var(--color-pale-blue);
   font-weight: var(--weight-bold);
-  transform: scale(1.1);
+  transform: scale(1.01);
   border: solid 2px var(--color-grey);
 }
 
@@ -279,6 +279,7 @@ p {
   /* display: none; */
 }
 
+/* home center */
 .home__center {
   margin-left: 50px;
   position: relative;
@@ -328,13 +329,16 @@ p {
 }
 
 .btn__container {
+  /* width: 50px; */
   position: relative;
 }
 
 .study__all-btn {
   position: absolute;
+  float: right;
+  width: 200px;
   top: -100px;
-  left: 1000px;
+  left: 900px;
   padding: 14px 28px;
   z-index: 1;
 }
@@ -482,4 +486,139 @@ p {
 
 .contact__link {
   margin: 0 13px;
+}
+
+/* Scroll */
+/* Arrou up Btn */
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+    --font-nano: 12px;
+  }
+  /* Common section */
+  .section__container {
+    /* width: 740px; */
+    /* max-width: 740px; */
+    margin: 16px;
+    /* padding: 20px 20px 20px 20px; */
+  }
+
+  .talk__container {
+    width: 150px;
+    height: 50px;
+  }
+
+  .talk__btn {
+    line-height: 50px;
+  }
+
+  /* Navbar */
+  #navbar {
+    justify-content: space-between;
+  }
+
+  /* Home */
+  #home {
+    /* margin: auto; */
+    padding: 16px;
+  }
+
+  #home .section__container {
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin: auto; */
+  }
+
+  /* home left */
+  .home__left {
+    z-index: 1;
+  }
+
+  .home__title-section .highlights {
+    top: 10px;
+    width: 63%;
+  }
+
+  .home__explore-contents {
+    width: 88%;
+    margin: 0 0 0 20px;
+  }
+
+  /* home center */
+  .home__center {
+    height: 400px;
+    width: 250px;
+    order: -1;
+    margin: auto;
+  }
+
+  .home__avatar-container {
+    margin-top: 70px;
+  }
+
+  .home__avatar {
+    height: 400px;
+    width: 250px;
+  }
+
+  .home__center .talk__container {
+    top: 400px;
+    left: 180px;
+  }
+
+  /* home right */
+  .home__right {
+    display: none;
+  }
+
+  /* Study */
+  #study {
+    padding: 16px;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .work:nth-child(even) {
+    margin: 30px 0;
+  }
+
+  .work:nth-child(odd) .work__right {
+    order: -1;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .work:nth-child(even) .work__left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .work__right .btn__container,
+  .work__left .btn__container {
+    text-align: right;
+  }
+
+  /* Clients */
+  #clients .section__container {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .client {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Contact */
+  .contact__bottom {
+    margin: 16px;
+  }
 }
