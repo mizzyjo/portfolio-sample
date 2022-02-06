@@ -233,6 +233,10 @@ p {
   z-index: -1;
 }
 
+.home__right {
+  height: 200px;
+}
+
 .home__right .contact__links {
   display: flex;
   flex-direction: column;
@@ -249,6 +253,7 @@ p {
 }
 
 .home__explore {
+  z-index: 1;
   margin-top: 40px;
   display: flex;
   align-items: center;
@@ -277,7 +282,16 @@ p {
   max-width: 580px;
   width: 40%;
   /* display: none; */
+  opacity: 0;
 }
+
+.show {
+  opacity: 1;
+}
+
+/* .home__explore-contents .show {
+  opacity: 1;
+} */
 
 /* home center */
 .home__center {
@@ -303,9 +317,15 @@ p {
   margin-bottom: 30px;
 }
 
+.home__right {
+  z-index: 1;
+}
+
 /* Study */
 #study {
   padding: 40px;
+  padding-top: 80px;
+  /* padding-bottom: 80px; */
   margin-bottom: 100px;
   position: relative;
 }
